@@ -1,14 +1,10 @@
-import { Rule, SchematicContext, Tree, apply, url, template, move, mergeWith } from '@angular-devkit/schematics';
+import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
 
-export function generateStructure(options: any): Rule {
+
+// You don't have to export the function as default. You can also have more than one rule factory
+// per file.
+export function customCliSchematicsUtils(_options: any): Rule {
   return (tree: Tree, _context: SchematicContext) => {
-    const sourceTemplates = url('./files');
-
-    return mergeWith(
-      apply(sourceTemplates, [
-        template({ ...options }), // Puedes pasar opciones al template si es necesario
-        move('/') // Mueve los archivos generados a la raíz del proyecto
-      ])
-    )(tree, _context);
+    return tree;
   };
 }

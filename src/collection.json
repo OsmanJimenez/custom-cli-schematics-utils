@@ -1,9 +1,13 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "generate-structure": {
-      "description": "Genera la estructura de directorios y archivos especificada",
-      "factory": "./index#generateStructure"
+    "custom-cli-schematics-utils": {
+      "description": "A blank schematic.",
+      "factory": "./custom-cli-schematics-utils/index#customCliSchematicsUtils"
+    },
+    "architecture-clean-code": {
+      "description": "A schematic for creating a clean architecture setup",
+      "factory": "./architecture-clean-code/index#architectureCleanCode"
     }
   }
 }
