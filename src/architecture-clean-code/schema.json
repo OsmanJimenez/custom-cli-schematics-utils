@@ -9,7 +9,13 @@
       "description": "The path where the architecture files will be generated.",
       "default": "src/app",
       "x-prompt": "What is the path where the files will be generated?"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the entity",
+      "minLength": 1,
+      "x-prompt": "What is the name of the entity?"
     }
   },
-  "required": []
+  "required": ["name"]
 }
