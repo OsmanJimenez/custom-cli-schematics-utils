@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "architectureCleanCodeSchema",
+  "title": "Architecture Clean Code Schema",
+  "type": "object",
+  "properties": {
+    "path": {
+      "type": "string",
+      "description": "The path where the architecture files will be generated.",
+      "default": "src/app",
+      "x-prompt": "What is the path where the files will be generated?"
+    }
+  },
+  "required": []
+}

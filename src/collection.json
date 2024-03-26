@@ -7,7 +7,8 @@
     },
     "architecture-clean-code": {
       "description": "A schematic for creating a clean architecture setup",
-      "factory": "./architecture-clean-code/index#architectureCleanCode"
+      "factory": "./architecture-clean-code/index#architectureCleanCode",
+      "schema": "./architecture-clean-code/schema.json"
     }
   }
 }
